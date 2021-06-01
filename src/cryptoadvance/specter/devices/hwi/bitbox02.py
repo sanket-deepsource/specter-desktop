@@ -107,7 +107,7 @@ class SilentNoiseConfig(util.BitBoxAppNoiseConfig):
 
 
 class CLINoiseConfig(util.BitBoxAppNoiseConfig):
-    """ Noise pairing and attestation check handling in the terminal (stdin/stdout) """
+    """Noise pairing and attestation check handling in the terminal (stdin/stdout)"""
 
     def show_pairing(self, code: str, device_response: Callable[[], bool]) -> bool:
         if _using_external_gui:
@@ -225,7 +225,7 @@ def bitbox02_exception(f: T) -> T:
 
     @wraps(f)
     def func(*args, **kwargs):  # type: ignore
-        """ Wraps f, mapping exceptions. """
+        """Wraps f, mapping exceptions."""
         try:
             return f(*args, **kwargs)
         except UserAbortException:
