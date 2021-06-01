@@ -8,9 +8,6 @@ exclude_patterns = ["docs/**"]
 name = "python"
 enabled = true
 
-  [analyzers.meta]
-  runtime_version = "3.x.x"
-
 [[transformers]]
 name = "black"
 enabled = true
